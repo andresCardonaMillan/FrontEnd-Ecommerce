@@ -1,0 +1,45 @@
+
+nav{
+  background-color: rgb(0, 0, 0);
+  padding-top: 15px;
+  height: 40px;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Cambia el diseño a flexbox */
+    justify-content: center; /* Centra los elementos horizontalmente */
+  }
+  
+  nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos de la lista */
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Color del texto */
+  }
+  
+  nav input[type="text"] {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  nav button {
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  nav button:hover {
+    background-color: #548bf3;
+  }
+
+  nav ul li a:hover{
+    background-color: gray;
+    border-radius: 7px;
+  }

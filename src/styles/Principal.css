@@ -1,0 +1,110 @@
+.hero {
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  padding: 0 20px;
+  width: 50%;
+  float: left;
+  margin-right: 20px;
+  padding: 20px;
+}
+
+.hero-personalizacion {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 100px;
+}
+
+.hero-personalizacion button{
+  padding: 5px 10px;
+  margin: 30px;
+  background-color: #383838;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none; /*quita bordes boton*/
+}
+
+.hero-personalizacion button:hover{
+  background-color: gray;
+}
+
+.content {
+  padding-left: 100px;
+}
+
+.img-content img {
+  padding-top: 50px;
+  height: 100%;
+  width: 400px;
+}
+
+.hero h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+}
+
+.about{
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para centrar verticalmente */
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Ajusta el contenedor al 100% del viewport height */
+}
+
+.about,
+.services {
+  color: #fff;
+}
+
+.about h2,
+.services h2{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.services ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 20px;
+}
+
+.services {
+  margin: 0;
+  padding: 0;
+}
+
+.services li{
+  margin: 0 10px 20px;
+  width: 300px;
+  text-align: center;
+  list-style: none;
+}
+
+.services img{
+  width: 100%;
+  border: none;
+  border-radius: 50%;
+  max-height: 250px;
+}
+
+.services button{
+  border: none;
+  width: 100%;
+  background: none;
+}
+
+button:hover {
+  opacity: 50%;
+}
