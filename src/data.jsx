@@ -31,4 +31,12 @@ export const data = [
         img: '/imagenes/camisa-violeta.png',
         quantity: 1,
     },
+
+    {
+        id:5,
+        nameProduct: 'Camisa Roja',
+        price: 20,
+        img: '/imagenes/camisa-roja.png',
+        quantity: 1,
+    },
 ];

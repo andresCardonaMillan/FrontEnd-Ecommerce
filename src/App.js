@@ -3,7 +3,6 @@ import './App.css';
 import Footer from './components/Footer';
 import { NavBar } from './components/Navbar';
 import Descripcion from './components/Descripcion';
-
 import Principal from './pages/Principal';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
