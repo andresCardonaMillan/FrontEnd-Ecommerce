@@ -36,14 +36,10 @@ export const NavBar = ({
       <nav>
         <ul class="opciones">
           <li>
-            <Link to="/" className="nav-link">
+              <div className="nav-link">
+                <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbar-icon" />
               Inicio
-            </Link>
-          </li>
-          <li>
-            <Link to="/Catalogo" className="nav-link">
-              Catálogo
-            </Link>
+              </div>
           </li>
 
           <li>
@@ -133,6 +129,31 @@ export const NavBar = ({
               </div>
             </div>
           </li>
+          <li>
+            <Link to="/" className="nav-inicio">
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link to="/Catalogo" className="nav-catalogo">
+              Catálogo
+            </Link>
+          </li>
+          <li>
+            <Link to="/Catalogo" className="nav-miperfil">
+              Perfil
+            </Link>
+          </li>
+
+          <li className="login-singnup">
+            <Link to="/login">
+              <img src="../imagenes/Login.png" alt="" className="login-icon" />
+            </Link>
+            <Link to="/signup">
+              <img src="../imagenes/Singup.png" alt="" className="singnup-icon" />
+            </Link>
+          </li>
+
         </ul>
       </nav>
     </div>
