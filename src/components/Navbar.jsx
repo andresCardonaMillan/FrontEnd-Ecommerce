@@ -38,7 +38,6 @@ export const NavBar = ({
           <li>
               <div className="nav-link">
                 <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbar-icon" />
-              Inicio
               </div>
           </li>
 
@@ -140,13 +139,13 @@ export const NavBar = ({
             </Link>
           </li>
           <li>
-            <Link to="/Catalogo" className="nav-miperfil">
+            <Link to="/Perfil" className="nav-miperfil">
               Perfil
             </Link>
           </li>
 
           <li className="login-singnup">
-            <Link to="/login">
+            <Link to="/Loginpage">
               <img src="../imagenes/Login.png" alt="" className="login-icon" />
             </Link>
             <Link to="/signup">

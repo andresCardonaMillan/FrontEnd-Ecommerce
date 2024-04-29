@@ -1,0 +1,71 @@
+/* Overall Styles */
+body {
+    background-color: #fff; /* Set background color to white */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Default font */
+  }
+  
+  /* Navbar Styles */
+  nav {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes items between start and end */
+    padding: 10px 20px; /* Add some padding inside the navbar */
+  }
+  
+  .nav-link {
+    display: flex; /* Flexbox for logo and potentially other elements */
+    align-items: center; /* Aligns logo vertically within the link */
+  }
+  
+  .navbar-icon {
+    margin-right: 10px; /* Add some spacing between logo and other content */
+  }
+  
+  .container {
+    max-width: 500px; /* Set a maximum width for centered content */
+    margin: 50px auto; /* Center the container horizontally and add some margin */
+  }
+  
+  /* Back Button Styles */
+  button {
+    background-color: transparent; /* Remove button background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Indicate clickability */
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex; /* Flexbox layout for form elements */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Add some spacing between form elements */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff; /* Blue background for submit button */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate clickability */
+    transition: background-color 0.3s ease; /* Add hover effect */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
