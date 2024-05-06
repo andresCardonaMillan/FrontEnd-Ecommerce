@@ -1,10 +1,6 @@
 import React from "react";
-
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
-
-
 import "../styles/NavBar.css";
 
 export const NavBar = ({
@@ -148,7 +144,7 @@ export const NavBar = ({
             <Link to="/Loginpage">
               <img src="../imagenes/Login.png" alt="" className="login-icon" />
             </Link>
-            <Link to="/signup">
+            <Link to="/SingupPage">
               <img src="../imagenes/Singup.png" alt="" className="singnup-icon" />
             </Link>
           </li>

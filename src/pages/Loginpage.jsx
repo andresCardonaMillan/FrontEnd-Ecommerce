@@ -1,9 +1,8 @@
 import React from "react";
 import "../styles/LoginPage.css";
-import { Link } from "react-router-dom";
 // import IMG from "../images/Logo1.png";
 
-function LoginPage() {
+export function LoginPage() {
     return (
       <>
         <nav>
@@ -38,4 +37,3 @@ function LoginPage() {
     }
   }
   
-  export default LoginPage;

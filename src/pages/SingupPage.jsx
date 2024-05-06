@@ -1,9 +1,8 @@
 import React from "react";
 import "../styles/SingupPage.css";
-import { Link } from "react-router-dom";
 // import IMG from "../images/Logo1.png";
 
-function LoginPage() {
+export function SingupPage() {
     return (
       <>
         <nav>
@@ -37,4 +36,3 @@ function LoginPage() {
     }
   }
   
-  export default LoginPage;
