@@ -1,13 +1,13 @@
-
 import './App.css';
 import Footer from './components/Footer';
 import { NavBar } from './components/Navbar';
 import Descripcion from './components/Descripcion';
-
 import Principal from './pages/Principal';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useState } from 'react';
 import {ProductList} from './pages/Catalogo';
+import {LoginPage} from './pages/Loginpage'
+import { SingupPage } from './pages/SingupPage';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -40,6 +40,8 @@ function App() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}          
           />} />
+          <Route path='/Loginpage' element={<LoginPage/>} />
+          <Route path='/SingupPage' element={<SingupPage/>} />
         </Routes>
         <Footer/>
       </div>

@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
+
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
 
@@ -53,14 +55,9 @@ export const NavBar = ({
       <nav>
         <ul className="opciones">
           <li>
-            <Link to="/" className="nav-link">
-              Inicio
-            </Link>
-          </li>
-          <li>
-            <Link to="/Catalogo" className="nav-link">
-              Catálogo
-            </Link>
+              <div className="nav-link">
+                <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbar-icon" />
+              </div>
           </li>
 
           <li>
@@ -162,6 +159,31 @@ export const NavBar = ({
               </div>
             </div>
           </li>
+          <li>
+            <Link to="/" className="nav-inicio">
+              Inicio
+            </Link>
+          </li>
+          <li>
+            <Link to="/Catalogo" className="nav-catalogo">
+              Catálogo
+            </Link>
+          </li>
+          <li>
+            <Link to="/Perfil" className="nav-miperfil">
+              Perfil
+            </Link>
+          </li>
+
+          <li className="login-singnup">
+            <Link to="/Loginpage">
+              <img src="../imagenes/Login.png" alt="" className="login-icon" />
+            </Link>
+            <Link to="/SingupPage">
+              <img src="../imagenes/Singup.png" alt="" className="singnup-icon" />
+            </Link>
+          </li>
+
         </ul>
       </nav>
     </div>
