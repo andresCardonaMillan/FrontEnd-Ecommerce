@@ -8,6 +8,7 @@ import { useState } from 'react';
 import {ProductList} from './pages/Catalogo';
 import {LoginPage} from './pages/Loginpage'
 import { SingupPage } from './pages/SingupPage';
+import { Inicio } from './pages/Inicio';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -15,9 +16,16 @@ function App() {
 	const [countProducts, setCountProducts] = useState(0);
 
   return (
-    <Router>
-      <div className="App"> 
-        <NavBar 
+    <div className="App">    
+     <Router>
+      
+        <Routes> {/* Envuelve tus Routes dentro del componente Routes */}
+          <Route path="/" element={<Inicio />} />
+          <Route path='/Loginpage' element={<LoginPage/>} />
+          <Route path='/SingupPage' element={<SingupPage/>} />
+          <Route path="/Inicio"  element={
+            <>
+          <NavBar 
           allProducts={allProducts}
           setAllProducts={setAllProducts}
           total={total}
@@ -25,27 +33,91 @@ function App() {
           countProducts={countProducts}
           setCountProducts={setCountProducts}
         />
-        <Routes>
-          <Route path='/' element={<Principal />} />
-          <Route path='/Descripcion' element={<Descripcion 
-          nombre= 'Camisa negra'
-          descripcion = 'lorem ipsum ajsjasjakshakshaknkda haskas ashiashka odahosna soadan daoksokaskaoskaoskaos oasoasoaksoaka oasoakoaksosa jaosjoasjoa oajsoajsoajs oajsoas ojasojaosjoasjoasj ojsoajs ojsoajs ojaosja jasojsoa oajsoa oajsoa nadoa soasnoa aosjoa aosjoa pasnoaso jajoasjoasjm osajosjaosa' 
-          />} />
-          <Route path='/Catalogo' element={<ProductList 
-          
+          <Principal 
           allProducts={allProducts}
           setAllProducts={setAllProducts}
           total={total}
           setTotal={setTotal}
           countProducts={countProducts}
-          setCountProducts={setCountProducts}          
-          />} />
-          <Route path='/Loginpage' element={<LoginPage/>} />
-          <Route path='/SingupPage' element={<SingupPage/>} />
+          setCountProducts={setCountProducts}  
+          /> </>
+        } />
+          <Route path="/Catalogo"  element={
+          <>
+          <NavBar 
+            allProducts={allProducts}
+            setAllProducts={setAllProducts}
+            total={total}
+            setTotal={setTotal}
+            countProducts={countProducts}
+            setCountProducts={setCountProducts}
+          />
+          <ProductList
+          allProducts={allProducts}
+          setAllProducts={setAllProducts}
+          total={total}
+          setTotal={setTotal}
+          countProducts={countProducts}
+          setCountProducts={setCountProducts}  
+          /> 
+          </>
+          } />
+          <Route path="/Descripcion"  element={
+          <>
+          <NavBar 
+            allProducts={allProducts}
+            setAllProducts={setAllProducts}
+            total={total}
+            setTotal={setTotal}
+            countProducts={countProducts}
+            setCountProducts={setCountProducts}
+          />
+          <Descripcion 
+          allProducts={allProducts}
+          setAllProducts={setAllProducts}
+          total={total}
+          setTotal={setTotal}
+          countProducts={countProducts}
+          setCountProducts={setCountProducts}  
+          /> 
+          </>
+          } />
         </Routes>
         <Footer/>
-      </div>
-    </Router>
+      </Router>
+    </div>
+    // <Router>
+    //   <div className="App"> 
+    //     <NavBar 
+    //       allProducts={allProducts}
+    //       setAllProducts={setAllProducts}
+    //       total={total}
+    //       setTotal={setTotal}
+    //       countProducts={countProducts}
+    //       setCountProducts={setCountProducts}
+    //     />
+    //     <Routes>
+    //       <Route path='/Inicio' element={<Principal/>} />
+    //       <Route path='/' element={<Inicio />} />
+    //       <Route path='/Descripcion' element={<Descripcion 
+    //       nombre= 'Camisa negra'
+    //       descripcion = 'lorem ipsum ajsjasjakshakshaknkda haskas ashiashka odahosna soadan daoksokaskaoskaoskaos oasoasoaksoaka oasoakoaksosa jaosjoasjoa oajsoajsoajs oajsoas ojasojaosjoasjoasj ojsoajs ojsoajs ojaosja jasojsoa oajsoa oajsoa nadoa soasnoa aosjoa aosjoa pasnoaso jajoasjoasjm osajosjaosa' 
+    //       />} />
+    //       <Route path='/Catalogo' element={<ProductList 
+          
+    //       allProducts={allProducts}
+    //       setAllProducts={setAllProducts}
+    //       total={total}
+    //       setTotal={setTotal}
+    //       countProducts={countProducts}
+    //       setCountProducts={setCountProducts}          
+    //       />} />
+    //       <Route path='/Loginpage' element={<LoginPage/>} />
+    //       <Route path='/SingupPage' element={<SingupPage/>} />
+    //     </Routes>
+    //     <Footer/>
+    //   </div>
+    // </Router>
   );
 }
 

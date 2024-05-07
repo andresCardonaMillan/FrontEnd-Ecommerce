@@ -125,7 +125,7 @@ export const NavBar = ({
             </div>
           </li>
           <li>
-            <Link to="/" className="nav-inicio">
+            <Link to="/Inicio" className="nav-inicio">
               Inicio
             </Link>
           </li>
