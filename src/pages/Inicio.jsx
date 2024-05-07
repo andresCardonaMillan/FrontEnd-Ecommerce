@@ -8,7 +8,7 @@ export function Inicio() {
         <div className="container-inicio">
             <h1>Elige tu perfil:</h1>
             <div className="Diseñador">
-                <Link to="/Descripcion" className="text">
+                <Link to="/Diseñador" className="text">
                     <button>Diseñador</button>
                 </Link>
             </div>
@@ -18,7 +18,7 @@ export function Inicio() {
                 </Link>
             </div>
             <div className="Encargado">
-                <Link to="/Descripcion" className="text">
+                <Link to="/Encargado" className="text">
                     <button>Encargado</button>
                 </Link>
             </div>

@@ -9,6 +9,8 @@ import {ProductList} from './pages/Catalogo';
 import {LoginPage} from './pages/Loginpage'
 import { SingupPage } from './pages/SingupPage';
 import { Inicio } from './pages/Inicio';
+import EncargadoPage from './pages/Encargado';
+import DesignerView from './pages/Diseñador';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -21,6 +23,8 @@ function App() {
       
         <Routes> {/* Envuelve tus Routes dentro del componente Routes */}
           <Route path="/" element={<Inicio />} />
+          <Route path="/Encargado" element={<EncargadoPage />} />
+          <Route path="/Diseñador" element={<DesignerView />} />
           <Route path='/Loginpage' element={<LoginPage/>} />
           <Route path='/SingupPage' element={<SingupPage/>} />
           <Route path="/Inicio"  element={

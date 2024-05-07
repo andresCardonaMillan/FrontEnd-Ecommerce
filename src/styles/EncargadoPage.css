@@ -1,0 +1,54 @@
+.encargado-page {
+    background-color: black;
+    color: white;
+    padding: 20px;
+  }
+  
+  .encargado-page h1,
+  .encargado-page h2 {
+    text-align: center;
+  }
+  
+  .encargado-page table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .encargado-page th,
+  .encargado-page td {
+    border: 1px solid white;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .encargado-page th {
+    background-color: #333;
+  }
+  
+  .encargado-page tr:nth-child(even) {
+    background-color: #666;
+  }
+  
+  .encargado-page tr:hover {
+    background-color: #999;
+  }
+  
+  .btn-proceso,
+  .btn-enviado,
+  .btn-asignar {
+    margin: 5px;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .btn-proceso:hover,
+  .btn-enviado:hover,
+  .btn-asignar:hover {
+    background-color: #0056b3;
+  }
+  
