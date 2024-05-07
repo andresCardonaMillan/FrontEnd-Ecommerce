@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import "../styles/NavBar.css";
@@ -21,6 +22,28 @@ export const NavBar = ({
     setAllProducts(results);
   };
 
+  const onIncreaseQuantity = (product) => {
+    const updatedProducts = allProducts.map((item) =>
+      item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+    );
+    setAllProducts(updatedProducts);
+    setTotal(total + product.price);
+    setCountProducts(countProducts + 1);
+  };
+
+  const onDecreaseQuantity = (product) => {
+    if (product.quantity === 1) {
+      onDeleteProduct(product);
+    } else {
+      const updatedProducts = allProducts.map((item) =>
+        item.id === product.id ? { ...item, quantity: item.quantity - 1 } : item
+      );
+      setAllProducts(updatedProducts);
+      setTotal(total - product.price);
+      setCountProducts(countProducts - 1);
+    }
+  };
+
   const onCleanCart = () => {
     setAllProducts([]);
     setTotal(0);
@@ -30,7 +53,7 @@ export const NavBar = ({
   return (
     <div>
       <nav>
-        <ul class="opciones">
+        <ul className="opciones">
           <li>
               <div className="nav-link">
                 <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbar-icon" />
@@ -80,9 +103,21 @@ export const NavBar = ({
                       {allProducts.map((product) => (
                         <div className="cart-product" key={product.id}>
                           <div className="info-cart-product">
+                            <button
+                              className="btn-quantity"
+                              onClick={() => onDecreaseQuantity(product)}
+                            >
+                              -
+                            </button>
                             <span className="cantidad-producto-carrito">
                               {product.quantity}
                             </span>
+                            <button
+                              className="btn-quantity"
+                              onClick={() => onIncreaseQuantity(product)}
+                            >
+                              +
+                            </button>
                             <p className="titulo-producto-carrito">
                               {product.nameProduct}
                             </p>
@@ -154,5 +189,3 @@ export const NavBar = ({
     </div>
   );
 };
-
-//export default NavBar;
