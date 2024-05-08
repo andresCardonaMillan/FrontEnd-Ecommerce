@@ -96,3 +96,27 @@
     color: white;
 }
 
+
+.item {
+  transition: transform 0.5s, background-color 0.5s;
+  opacity: 1;
+}
+
+.item.expanded {
+  transform: rotateY(180deg);
+  background-color: white; 
+}
+
+.item.expanded #figure img {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+.item button {
+    transition: transform 0.5s;
+  }
+  
+.item.expanded button {
+    transform: rotateY(-180deg);
+}
+
