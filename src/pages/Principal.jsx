@@ -43,6 +43,21 @@ function Principal() {
             </li>
           </ul>
         </section>
+        <section className="OPTIONS">
+          <ul>
+            <li>
+            <button>
+              <img src="/imagenes/Grupo-camisetas1.png"></img>
+            </button>
+            </li>
+            <li>
+            <button>
+              <img src="/imagenes/Grupo-camisetas2.png"></img>
+            </button>
+            </li>
+          </ul>
+
+          </section>
         {/* Seccion Mas vendidos */}
         <section className="services">
           <h2>Mas vendidos</h2>

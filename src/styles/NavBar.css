@@ -7,12 +7,13 @@ nav{
 }
 
 .nav-link {
- display: flex;
+  display: flex;
+  margin-bottom: 30%;
 }
-.nav-link img{
-  height: 85px;
-  margin-right: 140px;
-  margin-top: -40px;
+.navbar-icon{
+  width: 70%;
+  margin-bottom: 50%;
+  margin-top: -20px;
 }
 
 .nav-inicio{
