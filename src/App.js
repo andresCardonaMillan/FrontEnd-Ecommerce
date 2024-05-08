@@ -9,6 +9,7 @@ import {ProductList} from './pages/Catalogo';
 import {LoginPage} from './pages/Loginpage'
 import { SingupPage } from './pages/SingupPage';
 import { Inicio } from './pages/Inicio';
+import { PersonalizacionPage } from './pages/PersonalizacionPage';
 import EncargadoPage from './pages/Encargado';
 import DesignerView from './pages/Diseñador';
 
@@ -21,7 +22,7 @@ function App() {
     <div className="App">    
      <Router>
       
-        <Routes> {/* Envuelve tus Routes dentro del componente Routes */}
+        <Routes> 
           <Route path="/" element={<Inicio />} />
           <Route path="/Encargado" element={<EncargadoPage />} />
           <Route path="/Diseñador" element={<DesignerView />} />
@@ -86,7 +87,27 @@ function App() {
           /> 
           </>
           } />
-        </Routes>
+          <Route path="/PersonalizacionPage"  element={
+          <>
+          <NavBar 
+            allProducts={allProducts}
+            setAllProducts={setAllProducts}
+            total={total}
+            setTotal={setTotal}
+            countProducts={countProducts}
+            setCountProducts={setCountProducts}
+          />
+          <PersonalizacionPage
+          allProducts={allProducts}
+          setAllProducts={setAllProducts}
+          total={total}
+          setTotal={setTotal}
+          countProducts={countProducts}
+          setCountProducts={setCountProducts}  
+          /> 
+          </>
+          } />
+        </Routes> 
         <Footer/>
       </Router>
     </div>

@@ -43,4 +43,8 @@ export function PersonalizacionPage() {
       </div>
     </>
   );
+
+  function goBack() {
+    window.history.back();
+  }
 }
