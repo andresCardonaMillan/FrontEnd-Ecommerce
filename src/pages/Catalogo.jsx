@@ -45,7 +45,7 @@ export const ProductList = ({
 						</button>
             <button>
               <Link to="/Descripcion" className="nav-link">
-              Ver mas...
+              Personalizar...
               </Link>
             </button>
 					</div>

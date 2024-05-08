@@ -43,9 +43,9 @@ h2{
 }
 
 .img-content img {
-  padding-top: 50px;
-  height: 200%;
-  width: 600px;
+  padding-top: 50px; /* Maintain padding-top */
+  height: auto; 
+  max-width: 600px; 
 }
 
 .hero h2 {

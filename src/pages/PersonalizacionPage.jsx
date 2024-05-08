@@ -33,7 +33,7 @@ export function PersonalizacionPage() {
               <option value="black">Negro</option>
               <option value="white">Blanco</option>
               <option value="red">Rojo</option>
-              <option value="purple">Morado</option>
+              <option value="purple">Violeta</option>
             </select>
           </div>
 

@@ -9,11 +9,10 @@ function Principal() {
       <div>
         <section className="hero">
           <div className="content">
-            <h2>!WELCOME¡</h2>
+            <h2>!BIENVENIDO¡</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
-              reiciendis quos. est quam soluta eos laboriosam obcaecati tenetur
-              labore provident officia.
+            Libera tu creatividad y expresa tu estilo único con nuestra
+            plataforma de creación de productos y camisetas personalizadas.
             </p>
           </div>
           <div className="hero-personalizacion">

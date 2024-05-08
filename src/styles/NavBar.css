@@ -122,3 +122,21 @@ nav ul {
     margin-top: -50px;
     cursor: pointer; 
   }
+
+.cart-total{
+  color: #000000;
+}
+
+.count-products{
+  color: #ffffff;
+}
+
+.cantidad-producto-carrito{
+  color: #000000;
+  align-content: center;
+  left: 30px;
+}
+
+.icon-close{
+  color: red;
+}
