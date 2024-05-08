@@ -6,8 +6,8 @@ export function LoginPage() {
     return (
       <>
         <nav>
-            <div className="nav-link">
-                <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbar-icon" />
+            <div className="navlink2">
+                <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbaricon3" />
               </div>
               <div className="container">
                 <button onClick={goBack}>Volver</button>

@@ -15,12 +15,12 @@ body {
     padding: 10px 20px; /* Add some padding inside the navbar */
   }
   
-  .nav-link {
+  .navlink2 {
     display: flex; /* Flexbox for logo and potentially other elements */
     align-items: center; /* Aligns logo vertically within the link */
   }
   
-  .navbar-icon{
+  .navbaricon3{
     width: 70%;
     margin-bottom: 50%;
     margin-top: -20px;
