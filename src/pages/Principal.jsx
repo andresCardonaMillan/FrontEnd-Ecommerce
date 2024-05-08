@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Principal.css";
 // import IMG from "../images/camisa-fondo.png";
+import { Link } from "react-router-dom";
 
 function Principal() {
   return (
@@ -17,7 +18,13 @@ function Principal() {
           </div>
           <div className="hero-personalizacion">
             <h3>Crea tu propio diseño</h3>
-            <button><img src="/imagenes/Grupo-camisetas1.png"></img></button>
+            <li className="Personalizacionstuff">
+
+            <Link to ="/PersonalizacionPage"> 
+              <img src="../imagenes/Personalizacion.png" alt="" className="Pa-icon" />
+            </Link>
+
+          </li>
           </div>
         </section>
         {/* Imagen contenedor */}
