@@ -20,8 +20,10 @@ body {
     align-items: center; /* Aligns logo vertically within the link */
   }
   
-  .navbar-icon {
-    margin-right: 10px; /* Add some spacing between logo and other content */
+  .navbar-icon{
+    width: 70%;
+    margin-bottom: 50%;
+    margin-top: -20px;
   }
   
   .container {

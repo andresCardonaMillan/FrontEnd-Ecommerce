@@ -17,7 +17,7 @@ function Principal() {
           </div>
           <div className="hero-personalizacion">
             <h3>Crea tu propio diseño</h3>
-            <button>¡Personaliza ya!</button>
+            <button><img src="/imagenes/Grupo-camisetas1.png"></img></button>
           </div>
         </section>
         {/* Imagen contenedor */}
