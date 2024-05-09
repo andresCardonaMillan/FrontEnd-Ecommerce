@@ -1,21 +1,20 @@
 import React, { useState } from "react";
 import "../styles/Perfil.css";
-// import IMG from "../images/Logo1.png";
 
 export function Perfil() {
-    const [userData, setUserData] = useState({
-        name: 'Juan Pérez',
-        city: 'Cali',
-        address: 'Calle 123',
-        email: 'juan@example.com',
-        imagen: ""
-    });
+  const [userData, setUserData] = useState({
+    name: "Juan Pérez",
+    city: "Cali",
+    address: "Calle 123",
+    email: "juan@example.com",
+    imagen: "",
+  });
 
-    const [userOrders] = useState([
-        { id: 1, date: '2024-05-09', total: 50 },
-        { id: 2, date: '2024-05-07', total: 70 },
-        { id: 3, date: '2024-05-05', total: 100 }
-    ]);
+  const [userOrders] = useState([
+    { id: 1, date: "2024-05-09", total: 50 },
+    { id: 2, date: "2024-05-07", total: 70 },
+    { id: 3, date: "2024-05-05", total: 100 },
+  ]);
 
   const handleImageChange = (event) => {
     if (event.target.files && event.target.files[0]) {
@@ -28,37 +27,60 @@ export function Perfil() {
   };
 
   return (
-    <>
-      <div className="container">
-        <h1>Perfil de usuario</h1>
+    <div className="container">
+      <h1 className="profile-title">Perfil de usuario</h1>
 
-        <form>
-          <div className="profile-image">
-            <img src={userData.imagen || ""} alt="Imagen de perfil" />
-            <input
-              type="file"
-              accept="image/*"
-              onChange={handleImageChange}
-            />
-          </div>
-          <div>
-                <h3>Datos del usuario:</h3>
-                <p>Nombre: {userData.name}</p>
-                <p>Ciudad: {userData.city}</p>
-                <p>Dirección: {userData.address}</p>
-                <p>Correo electrónico: {userData.email}</p>
-            </div>
-
-            <h3>Órdenes realizadas:</h3>
-            <ul>
-                {userOrders.map(order => (
-                    <li key={order.id}>
-                        Orden ID: {order.id}, Fecha: {order.date}, Total: {order.total}
-                    </li>
-                ))}
-            </ul>
-        </form>
+      <div className="profile-section">
+        <div className="user-data">
+          <h3>Datos del usuario:</h3>
+          <table>
+            <tbody>
+              <tr>
+                <td>Nombre:</td>
+                <td>{userData.name}</td>
+              </tr>
+              <tr>
+                <td>Ciudad:</td>
+                <td>{userData.city}</td>
+              </tr>
+              <tr>
+                <td>Dirección:</td>
+                <td>{userData.address}</td>
+              </tr>
+              <tr>
+                <td>Correo electrónico:</td>
+                <td>{userData.email}</td>
+              </tr>
+            </tbody>
+          </table>
+          <button type="button" onClick={() => document.getElementById('fileInput').click()}>Cambiar foto de perfil</button>
+          <input id="fileInput" type="file" accept="image/*" onChange={handleImageChange} style={{ display: 'none' }} />
+        </div>
+        <div className="profile-image">
+          <img src={userData.imagen || "/imagenes/profile_usericon.png"} alt="Imagen de perfil" />
+        </div>
       </div>
-    </>
+
+      <h3>Órdenes realizadas:</h3>
+      <table className="order-list-table">
+        <thead>
+          <tr>
+            <th>Orden ID</th>
+            <th>Detalles</th>
+          </tr>
+        </thead>
+        <tbody>
+          {userOrders.map((order) => (
+            <tr key={order.id}>
+              <td>{order.id}</td>
+              <td id="order-details">
+                <p>Fecha: {order.date}</p>
+                <p>Total: {order.total}</p>
+              </td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
   );
 }
