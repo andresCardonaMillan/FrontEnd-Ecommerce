@@ -153,7 +153,8 @@ ul {
 .about h2 {
   grid-column: span 2; 
   margin-bottom: 20px;
-  text-align: center; 
+  text-align: center;
+  color: #fff; 
 }
 
 .about p:first-of-type { 
