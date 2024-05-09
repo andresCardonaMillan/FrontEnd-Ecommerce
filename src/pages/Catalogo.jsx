@@ -50,7 +50,7 @@ export const ProductList = ({
             <p className='price'>${product.price}</p>
             {showDescription && <Descripcion nombre={product.nameProduct} descripcion={product.descripcion} />} {/* Renderiza Descripcion si showDescription es true */}
             {buttonVisible && (
-              <button onClick={() => { onAddProduct(product); handleButtonClick(); }}>
+              <button onClick={() => { onAddProduct(product); }}>
                 Añadir al carrito
               </button>
             )}

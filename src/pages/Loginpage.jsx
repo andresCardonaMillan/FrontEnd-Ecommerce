@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/LoginPage.css";
 // import IMG from "../images/Logo1.png";
+//<img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbaricon3" />
 
 export function LoginPage() {
     return (

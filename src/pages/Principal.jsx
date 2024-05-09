@@ -30,35 +30,38 @@ function Principal() {
         <section className="img-content">
           <img src="/imagenes/camisa-fondo1.png" alt="Imagen de fondo" />
         </section>
-        {/* Sobre mi */}
-        <section className="about">
+        <section class="about">
           <h2>Sobre nosotros</h2>
-          <p>Texto sobre la empresa o la organización.</p>
+          <p>
+            Somos una tienda virtual que ofrece una amplia
+            gama de camisetas personalizadas y otros productos,
+            utilizando técnicas de impresión de alta calidad para 
+            plasmar tus ideas y diseños únicos en cada prenda..</p>
           <ul>
-            <li>
-              <h3>Título 1</h3>
-              <p>Descripción breve del contenido 1.</p>
-            </li>
-            <li>
-              <h3>Título 2</h3>
-              <p>Descripción breve del contenido 2.</p>
-            </li>
-            <li>
-              <h3>Título 3</h3>
-              <p>Descripción breve del contenido 3.</p>
+            <li class="about-box">
+            <h3>Mision</h3>
+              <p>Ser la tienda virtual líder en la creación de camisetas personalizadas y otros productos, ofreciendo a nuestros clientes una experiencia de compra única y satisfactoria, donde la creatividad y la calidad se unen para crear productos que reflejen su estilo personal.</p>
+             </li>
+            <li class="about-box">
+              <h3>Vision</h3>
+                <p>Convertirnos en una marca reconocida a nivel mundial por nuestra innovación, calidad y compromiso con la satisfacción del cliente, ofreciendo una amplia gama de productos personalizados que permitan a las personas expresarse libremente a través de la moda.</p>
             </li>
           </ul>
         </section>
+
         <section className="OPTIONS">
+          <div class="options-header">
+            <h2>Categorias</h2>
+          </div>
           <ul>
             <li>
             <button>
-              <img src="/imagenes/Grupo-camisetas1.png"></img>
+              <img src="/imagenes/Grupo-camisetas1.png" alt="mascosas"></img>
             </button>
             </li>
             <li>
             <button>
-              <img src="/imagenes/Grupo-camisetas2.png"></img>
+              <img src="/imagenes/Grupo-camisetas2.png" alt="camisas"></img>
             </button>
             </li>
           </ul>
@@ -86,6 +89,25 @@ function Principal() {
                 <img src="/imagenes/camiseta-pelicula.jpg" alt="Camisa Videojuegos" />
               </button>
             </li>
+            <li>
+              <h3>Música</h3>
+              <button>
+              <img src="/imagenes/camisaRock.png" alt="Camisa Música" />
+              </button>
+            </li>
+            <li>
+              <h3>Series</h3>
+              <button>
+              <img src="/imagenes/camisaSeries.png" alt="Camisa Serie" />
+              </button>
+            </li>
+            <li>
+              <h3>Deporte</h3>
+              <button>
+              <img src="/imagenes/camisaDeporte.png" alt="Camisa Deporte" />
+            </button>
+            </li>
+            
           </ul>
         </section>
       </div>
