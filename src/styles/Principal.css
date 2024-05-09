@@ -58,20 +58,11 @@ h2{
   margin-bottom: 30px;
 }
 
-.about{
-  display: flex;
-  flex-direction: column; /* Cambiado a columna para centrar verticalmente */
-  align-items: center;
-  justify-content: center;
-  height: 100vh; /* Ajusta el contenedor al 100% del viewport height */
-}
-
-.about,
 .services {
   color: #fff;
 }
 
-.about h2,
+
 .services h2{
   text-align: center;
   margin-bottom: 20px;
@@ -89,15 +80,19 @@ h2{
   padding: 0;
 }
 
+.services ul {
+  flex-direction: row; /* Arrange items in a row (optional) */
+}
+
 .services li{
   margin: 0 10px 20px;
-  width: 300px;
+  width: calc(33.33% - 20px); 
   text-align: center;
   list-style: none;
 }
 
 .services img{
-  width: 100%;
+  width: 77%;
   border: none;
   border-radius: 50%;
   max-height: 250px;
@@ -111,4 +106,84 @@ h2{
 
 button:hover {
   opacity: 50%;
+}
+
+
+ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.OPTIONS {
+  margin-bottom: 200px; 
+  text-align: center;
+}
+
+.OPTIONS h2{
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.OPTIONS .options-header {
+  display: flex;
+  justify-content: center; 
+  margin-bottom: 40px; 
+}
+
+.OPTIONS ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+}
+
+.OPTIONS li button img {
+  width: 95%; 
+  height: auto;
+}
+
+.about {
+  display: grid; 
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 20px; 
+  align-items: center;
+  margin: 20px;
+  text-align: center; 
+}
+
+.about h2 {
+  grid-column: span 2; 
+  margin-bottom: 20px;
+  text-align: center; 
+}
+
+.about p:first-of-type { 
+  grid-column: span 2; 
+  margin-bottom: 40px; 
+  text-align: center; 
+}
+
+.about ul {
+  display: grid; /* Enable Grid layout for the list */
+  grid-template-columns: repeat(2, 1fr); /* Divide into 2 columns */
+  gap: 25px; /* Add spacing between columns */
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically within the grid */
+}
+
+.about-box {
+  flex: 1 0 auto; /* Allow each box to flex and grow */
+  padding: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  text-align: center; /* Center text within each box */
+  justify-content: center;
+}
+
+.about-box h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.about-box p {
+  line-height: 1.6;
 }
