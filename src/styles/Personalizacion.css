@@ -1,21 +1,88 @@
 nav {
-    background-color: black; /* Set navbar background to black */
-    padding: 10px 20px; /* Add some padding for spacing */
-    display: flex; /* Enable flexbox for layout */
-    justify-content: space-between; /* Distribute space between items */
-    align-items: center; /* Align items vertically */
-  }
-  
-  /* Style the logo */
-  .navicon {
-    display: inline-block; /* Make the logo an inline block */
-    margin-right: 20px; /* Add some margin to the right of the logo */
-  }
+  background-color: black;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .container button {
-    background-color: transparent; /* Remove default button background */
-    color: white; /* Set button text color to white */
-    border: none; /* Remove default button border */
-    cursor: pointer; /* Indicate clickable behavior */
-    margin-left: 10px; /* Add margin between buttons */
-  }
+.navicon {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.container button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.personalizacion-form {
+  display: flex;
+  margin-left: auto; /* Agrega esta línea */
+}
+
+.personalizacion-column {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Agrega esta línea */
+}
+
+.size-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  width: 100%; /* Agrega esta línea */
+}
+
+.personalizacion-row {
+  margin-bottom: 20px;
+}
+
+.size-grid div {
+  display: flex;
+  align-items: center;
+}
+
+.size-grid input[type="radio"] {
+  margin-right: 5px;
+}
+
+.size-grid label {
+  margin-bottom: 0;
+}
+
+.color-picker {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.color-input {
+  display: flex;
+  align-items: center;
+}
+
+.color-input label {
+  margin-right: 5px;
+}
+
+.color-input input[type="range"] {
+  width: 100px;
+  margin-right: 5px;
+}
+
+.color-input span {
+  margin-right: 10px;
+}
+
+.color-preview {
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+}
