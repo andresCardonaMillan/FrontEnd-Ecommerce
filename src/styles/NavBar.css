@@ -1,34 +1,69 @@
 
 nav{
   background-color: rgb(0, 0, 0);
-  padding-top: 30px;
+  padding-top: 20px;
   height: 40px;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
+  display: flex;
 }
 
 .nav-link {
- display: flex;
+  display: inline-block;
+  padding-right: 80px; /* Maintain padding on the right */
 }
-.nav-link img{
-  height: 85px;
-  margin-right: 140px;
-  margin-top: -40px;
+
+/* Style the icon image */
+.nav-link img {
+  max-width: 80px; /* Set a maximum width for scaling */
+  height: auto; 
 }
 
 .nav-inicio{
-  margin-right: 10px;
+  position: relative;
+  margin-right: 20px;
+  top: 30px;
 }
 .nav-catalogo{
+  position: relative;
   margin-right: 20px;
+  top: 30px;
 }
 .nav-miperfil{
+  position: relative;
   margin-right: 20px;
+  top: 30px;
 }
 
 .container-icon{
   margin-top: -10px;
   margin-right: 15px;
+  top: 29px;
 }
+
+.barraBusqueda {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the search input */
+.barraBusqueda input[type="text"] {
+  flex-grow: 1;
+  width: 300px; /* Adjust width as needed */
+  height: 20px; /* Adjust height as needed */
+  padding: 5px; /* Adjust padding as needed */
+  border: 1px solid #080707;
+}
+
+/* Style the search button */
+.barraBusqueda button {
+  padding: 5px 10px; /* Adjust padding as needed */
+  height: 30px; /* Adjust height as needed */
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -52,7 +87,7 @@ nav ul {
   
   nav button {
     padding: 5px 10px;
-    background-color: #007bff;
+    background-color: #212c36;
     color: #fff;
     border-radius: 5px;
     cursor: pointer;
@@ -68,10 +103,14 @@ nav ul {
     border-radius: 7px;
   }
 
+  .login-singnup{
+    margin-top: 25px;
+  }
+
   .login-icon{
     display: flex; 
-    width: 75px; 
-    margin-left: 55px;
+    width: 78px; 
+    margin-left: 57px;
     margin-bottom: 20px;
     cursor: pointer; 
   }
@@ -79,7 +118,25 @@ nav ul {
   .singnup-icon{
     display: flex; 
     width: 107px; 
-    margin-left: 155px;
+    margin-left: 160px;
     margin-top: -50px;
     cursor: pointer; 
   }
+
+.cart-total{
+  color: #000000;
+}
+
+.count-products{
+  color: #ffffff;
+}
+
+.cantidad-producto-carrito{
+  color: #000000;
+  align-content: center;
+  left: 30px;
+}
+
+.icon-close{
+  color: red;
+}

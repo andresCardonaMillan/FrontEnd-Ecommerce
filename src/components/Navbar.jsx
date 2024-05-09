@@ -56,16 +56,18 @@ export const NavBar = ({
         <ul className="opciones">
           <li>
               <div className="nav-link">
-                <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbar-icon" />
+                <img src="../imagenes/Logo1.png" alt="Navbar Icon" />
               </div>
           </li>
 
+          <div className="barraBusqueda">
           <li>
             <input type="text" placeholder="Buscar..." />
           </li>
           <li>
             <button>Buscar</button>
           </li>
+          </div>
 
           <li>
             <div className="container-icon">
@@ -160,7 +162,7 @@ export const NavBar = ({
             </div>
           </li>
           <li>
-            <Link to="/" className="nav-inicio">
+            <Link to="/Inicio" className="nav-inicio">
               Inicio
             </Link>
           </li>

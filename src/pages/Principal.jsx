@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/Principal.css";
 // import IMG from "../images/camisa-fondo.png";
+import { Link } from "react-router-dom";
 
 function Principal() {
   return (
@@ -8,16 +9,21 @@ function Principal() {
       <div>
         <section className="hero">
           <div className="content">
-            <h2>!WELCOME¡</h2>
+            <h2>!BIENVENIDO¡</h2>
             <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil,
-              reiciendis quos. est quam soluta eos laboriosam obcaecati tenetur
-              labore provident officia.
+            Libera tu creatividad y expresa tu estilo único con nuestra
+            plataforma de creación de productos y camisetas personalizadas.
             </p>
           </div>
           <div className="hero-personalizacion">
             <h3>Crea tu propio diseño</h3>
-            <button>¡Personaliza ya!</button>
+            <li className="Personalizacionstuff">
+
+            <Link to ="/PersonalizacionPage"> 
+              <img src="../imagenes/Personalizacion.png" alt="" className="Pa-icon" />
+            </Link>
+
+          </li>
           </div>
         </section>
         {/* Imagen contenedor */}
@@ -43,6 +49,21 @@ function Principal() {
             </li>
           </ul>
         </section>
+        <section className="OPTIONS">
+          <ul>
+            <li>
+            <button>
+              <img src="/imagenes/Grupo-camisetas1.png"></img>
+            </button>
+            </li>
+            <li>
+            <button>
+              <img src="/imagenes/Grupo-camisetas2.png"></img>
+            </button>
+            </li>
+          </ul>
+
+          </section>
         {/* Seccion Mas vendidos */}
         <section className="services">
           <h2>Mas vendidos</h2>

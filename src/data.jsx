@@ -34,9 +34,9 @@ export const data = [
 
     {
         id:5,
-        nameProduct: 'Camisa Roja',
-        price: 20,
-        img: '/imagenes/camisa-roja.png',
+        nameProduct: 'Maleta Conejo',
+        price: 100,
+        img: '/imagenes/maletinC.png',
         quantity: 1,
     },
 ];

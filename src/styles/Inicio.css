@@ -1,0 +1,23 @@
+
+.text {text-decoration:none}
+
+
+.container-inicio {
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.Diseñador button,
+.Cliente button,
+.Encargado button {
+    height: 100px;
+    width: 250px;
+    background-color: #007bff;
+    border-radius: 10px;
+    font-size: 40px;
+    padding: 10px;
+    margin: 30px;
+}

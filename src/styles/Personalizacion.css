@@ -1,0 +1,21 @@
+nav {
+    background-color: black; /* Set navbar background to black */
+    padding: 10px 20px; /* Add some padding for spacing */
+    display: flex; /* Enable flexbox for layout */
+    justify-content: space-between; /* Distribute space between items */
+    align-items: center; /* Align items vertically */
+  }
+  
+  /* Style the logo */
+  .navicon {
+    display: inline-block; /* Make the logo an inline block */
+    margin-right: 20px; /* Add some margin to the right of the logo */
+  }
+
+  .container button {
+    background-color: transparent; /* Remove default button background */
+    color: white; /* Set button text color to white */
+    border: none; /* Remove default button border */
+    cursor: pointer; /* Indicate clickable behavior */
+    margin-left: 10px; /* Add margin between buttons */
+  }

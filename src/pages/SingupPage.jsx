@@ -6,8 +6,8 @@ export function SingupPage() {
     return (
       <>
         <nav>
-            <div className="nav-link">
-                <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbar-icon" />
+            <div className="navlink">
+                <img src="../imagenes/Logo1.png" alt="Navbar Icon" className="navbaricon2" />
               </div>
               <div className="container">
                 <button onClick={goBack}>Volver</button>
