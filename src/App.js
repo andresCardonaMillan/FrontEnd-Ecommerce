@@ -12,6 +12,7 @@ import { Inicio } from './pages/Inicio';
 import { PersonalizacionPage } from './pages/PersonalizacionPage';
 import EncargadoPage from './pages/Encargado';
 import DesignerView from './pages/Diseñador';
+import { Orden } from './pages/Orden';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -107,42 +108,29 @@ function App() {
           /> 
           </>
           } />
+          <Route path="/Orden"  element={
+            <>
+          <NavBar 
+          allProducts={allProducts}
+          setAllProducts={setAllProducts}
+          total={total}
+          setTotal={setTotal}
+          countProducts={countProducts}
+          setCountProducts={setCountProducts}
+        />
+          <Orden 
+          allProducts={allProducts}
+          setAllProducts={setAllProducts}
+          total={total}
+          setTotal={setTotal}
+          countProducts={countProducts}
+          setCountProducts={setCountProducts}  
+          /> </>
+        } />
         </Routes> 
         <Footer/>
       </Router>
     </div>
-    // <Router>
-    //   <div className="App"> 
-    //     <NavBar 
-    //       allProducts={allProducts}
-    //       setAllProducts={setAllProducts}
-    //       total={total}
-    //       setTotal={setTotal}
-    //       countProducts={countProducts}
-    //       setCountProducts={setCountProducts}
-    //     />
-    //     <Routes>
-    //       <Route path='/Inicio' element={<Principal/>} />
-    //       <Route path='/' element={<Inicio />} />
-    //       <Route path='/Descripcion' element={<Descripcion 
-    //       nombre= 'Camisa negra'
-    //       descripcion = 'lorem ipsum ajsjasjakshakshaknkda haskas ashiashka odahosna soadan daoksokaskaoskaoskaos oasoasoaksoaka oasoakoaksosa jaosjoasjoa oajsoajsoajs oajsoas ojasojaosjoasjoasj ojsoajs ojsoajs ojaosja jasojsoa oajsoa oajsoa nadoa soasnoa aosjoa aosjoa pasnoaso jajoasjoasjm osajosjaosa' 
-    //       />} />
-    //       <Route path='/Catalogo' element={<ProductList 
-          
-    //       allProducts={allProducts}
-    //       setAllProducts={setAllProducts}
-    //       total={total}
-    //       setTotal={setTotal}
-    //       countProducts={countProducts}
-    //       setCountProducts={setCountProducts}          
-    //       />} />
-    //       <Route path='/Loginpage' element={<LoginPage/>} />
-    //       <Route path='/SingupPage' element={<SingupPage/>} />
-    //     </Routes>
-    //     <Footer/>
-    //   </div>
-    // </Router>
   );
 }
 

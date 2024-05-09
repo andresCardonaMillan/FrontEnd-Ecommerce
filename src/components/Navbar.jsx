@@ -154,6 +154,13 @@ export const NavBar = ({
                     <button className="btn-clear-all" onClick={onCleanCart}>
                       Vaciar Carrito
                     </button>
+
+                    <Link to="/Orden" className="text">
+                      <button className="btn-clear-all" onClick={onCleanCart}>
+                        Comprar
+                      </button>
+                    </Link>
+
                   </>
                 ) : (
                   <p className="cart-empty">El carrito está vacío</p>

@@ -1,0 +1,95 @@
+/* Overall Styles */
+body {
+    background-color: #fff; /* Set background color to white */
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif; /* Default font */
+  }
+  
+  /* Navbar Styles */
+  nav {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text color */
+    display: flex; /* Enables flexbox layout */
+    justify-content: space-between; /* Distributes items between start and end */
+    padding: 10px 20px; /* Add some padding inside the navbar */
+  }
+  
+  .navlink2 {
+    display: flex; /* Flexbox for logo and potentially other elements */
+    align-items: center; /* Aligns logo vertically within the link */
+  }
+  
+  .navbaricon3{
+    width: 70%;
+    margin-bottom: 50%;
+    margin-top: -20px;
+  }
+  
+  /*IMAGEN EMERGENTE*/
+  .mensaje-emergente {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff;
+    padding: 20px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Asegúrate de que el mensaje esté por encima de otros elementos */
+  }
+  
+  .mensaje-emergente button {
+    margin-top: 10px;
+    display: block; /* Asegura que el botón se muestre correctamente */
+    margin-left: auto; /* Centra el botón horizontalmente */
+    margin-right: auto; /* Centra el botón horizontalmente */
+    color: #ff3838;
+  }
+
+  .container {
+    max-width: 500px; /* Set a maximum width for centered content */
+    margin: 50px auto; /* Center the container horizontally and add some margin */
+  }
+  
+  /* Back Button Styles */
+  button {
+    background-color: transparent; /* Remove button background color */
+    border: none; /* Remove border */
+    cursor: pointer; /* Indicate clickability */
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex; /* Flexbox layout for form elements */
+    flex-direction: column; /* Stack elements vertically */
+    gap: 15px; /* Add some spacing between form elements */
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button[type="submit"] {
+    background-color: #007bff; /* Blue background for submit button */
+    color: #fff; /* White text color */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer; /* Indicate clickability */
+    transition: background-color 0.3s ease; /* Add hover effect */
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
