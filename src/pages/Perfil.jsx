@@ -1,11 +1,14 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
+import "../styles/Perfil.css";
+// import IMG from "../images/Logo1.png";
 
 export function Perfil() {
-    const [userData] = useState({
+    const [userData, setUserData] = useState({
         name: 'Juan Pérez',
         city: 'Cali',
         address: 'Calle 123',
-        email: 'juan@example.com'
+        email: 'juan@example.com',
+        imagen: ""
     });
 
     const [userOrders] = useState([
@@ -14,10 +17,31 @@ export function Perfil() {
         { id: 3, date: '2024-05-05', total: 100 }
     ]);
 
-    return (
-        <div>
-            <h2>Perfil de usuario</h2>
-            <div>
+  const handleImageChange = (event) => {
+    if (event.target.files && event.target.files[0]) {
+      const reader = new FileReader();
+      reader.onload = (e) => {
+        setUserData({ ...userData, imagen: e.target.result });
+      };
+      reader.readAsDataURL(event.target.files[0]);
+    }
+  };
+
+  return (
+    <>
+      <div className="container">
+        <h1>Perfil de usuario</h1>
+
+        <form>
+          <div className="profile-image">
+            <img src={userData.imagen || ""} alt="Imagen de perfil" />
+            <input
+              type="file"
+              accept="image/*"
+              onChange={handleImageChange}
+            />
+          </div>
+          <div>
                 <h3>Datos del usuario:</h3>
                 <p>Nombre: {userData.name}</p>
                 <p>Ciudad: {userData.city}</p>
@@ -33,8 +57,8 @@ export function Perfil() {
                     </li>
                 ))}
             </ul>
-        </div>
-    );
+        </form>
+      </div>
+    </>
+  );
 }
-
-
