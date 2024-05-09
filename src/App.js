@@ -13,6 +13,7 @@ import { PersonalizacionPage } from './pages/PersonalizacionPage';
 import EncargadoPage from './pages/Encargado';
 import DesignerView from './pages/Diseñador';
 import { Orden } from './pages/Orden';
+import { Perfil } from './pages/Perfil';
 
 function App() {
   const [allProducts, setAllProducts] = useState([]);
@@ -68,7 +69,7 @@ function App() {
           /> 
           </>
           } />
-          <Route path="/Descripcion"  element={
+          <Route path="/Perfil"  element={
           <>
           <NavBar 
             allProducts={allProducts}
@@ -78,7 +79,7 @@ function App() {
             countProducts={countProducts}
             setCountProducts={setCountProducts}
           />
-          <Descripcion 
+          <Perfil 
           allProducts={allProducts}
           setAllProducts={setAllProducts}
           total={total}
