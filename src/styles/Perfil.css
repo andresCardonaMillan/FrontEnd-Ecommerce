@@ -1,0 +1,48 @@
+
+.container {
+    display: flex; /* Habilita el diseño flexible */
+    flex-direction: row; /* Coloca los elementos en fila */
+    align-items: stretch; /* Alinea los elementos verticalmente */
+    margin: 20px auto; /* Centra el contenedor horizontalmente */
+    width: 80%; /* Define el ancho del contenedor */
+    max-width: 800px; /* Ancho máximo para pantallas más grandes */
+  }
+  
+  .profile-image {
+    width: 200px; /* Ancho de la columna de imagen */
+    height: 200px; /* Altura de la columna de imagen */
+    margin-right: 20px; /* Espacio entre las columnas */
+  }
+  
+  .profile-image img {
+    width: 100%; /* La imagen ocupa todo el ancho de la columna */
+    height: 100%; /* La imagen ocupa toda la altura de la columna */
+    object-fit: cover; /* Mantiene la proporción de la imagen, recortando si es necesario */
+    border-radius: 50%; /* Crea una forma circular para la imagen */
+  }
+  
+  .profile-info {
+    flex: 1; /* La columna de información ocupa el espacio restante */
+  }
+  
+  .profile-info label {
+    display: block; /* Muestra las etiquetas en una nueva línea */
+    margin-bottom: 5px; /* Espacio entre la etiqueta y el campo de entrada */
+  }
+  
+  .profile-info input,
+  .profile-info textarea {
+    width: 100%; /* Los campos de entrada ocupan todo el ancho de la columna */
+    padding: 8px; /* Espacio interno en los campos de entrada */
+    border: 1px solid #ccc; /* Borde gris claro */
+    margin-bottom: 15px; /* Espacio entre los campos de entrada */
+  }
+  
+  .profile-info button {
+    padding: 10px 20px; /* Espacio interno en el botón */
+    background-color: #007bff; /* Color de fondo azul */
+    color: #fff; /* Color de texto blanco */
+    border: none; /* Elimina el borde del botón */
+    cursor: pointer; /* Cambia el cursor a mano al pasar el mouse */
+  }
+  
